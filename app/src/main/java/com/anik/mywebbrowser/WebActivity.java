@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.KeyEvent;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Toast;
 
 public class WebActivity extends AppCompatActivity {
 
@@ -22,6 +23,9 @@ public class WebActivity extends AppCompatActivity {
         web.setWebViewClient(new WebViewClient());
         web.getSettings().setJavaScriptEnabled(true);
         web.getSettings().setBuiltInZoomControls(true);
+
+
+        Toast.makeText(this, "Simple Tost", Toast.LENGTH_SHORT).show();
 
        if (getUrl.equals("offline"))
        {
